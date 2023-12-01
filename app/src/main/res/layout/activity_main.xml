@@ -12,7 +12,7 @@
         android:id="@+id/GoQuizTitle"
         android:text="GoQuiz"
         android:textStyle="bold"
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,32 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:justificationMode="inter_word"
-                android:text="Bạn yêu thích kiến thức và muốn thử thách bản thân với những câu hỏi hấp dẫn? Bạn muốn tìm hiểu thêm về các lĩnh vực khác nhau như Lịch sử, Địa lý, Khoa học, Nghệ thuật, …? Bạn muốn cùng bạn bè và người thân tham gia vào một trò chơi vui nhộn và bổ ích? Hãy đến với GoQuiz - ứng dụng và trò chơi trắc nghiệm đa dạng và thú vị!"
-                android:textSize="15dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:justificationMode="inter_word"
-                android:text="GoQuiz là một ứng dụng và trò chơi trắc nghiệm trực tuyến, cho phép bạn trả lời các câu hỏi theo nhiều chủ đề khác nhau. Bạn có thể chọn chủ đề mình yêu thích hoặc muốn tìm hiểu thêm, và trả lời các câu hỏi ở hai cấp độ là dễ và khó. Mỗi câu hỏi đều có bốn lựa chọn, và bạn chỉ có một lần chọn đáp án. Bạn sẽ được tính điểm dựa trên số câu trả lời đúng và thời gian trả lời. Thành tích của bạn giữa các lần chơi sẽ được lưu lại, và bạn có thể xem xếp hạng của mình so với các người chơi khác."
-                android:textSize="15dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:justificationMode="inter_word"
-                android:text="GoQuiz còn có chế độ chơi theo nhóm, cho phép bạn cùng bạn bè và người thân tham gia vào một cuộc thi trắc nghiệm sôi động và gay cấn. Bạn có thể tạo một nhóm chơi, mời các thành viên khác tham gia, và chọn chủ đề và cấp độ cho cuộc thi. Bạn cũng có thể tham gia vào các nhóm chơi do người khác tạo, và cùng nhau trải nghiệm niềm vui của việc học tập và giải trí."
-                android:textSize="15dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:justificationMode="inter_word"
-                android:text="GoQuiz là một ứng dụng và trò chơi hoàn toàn miễn phí, dễ sử dụng và thân thiện với người dùng. Bạn chỉ cần tải ứng dụng về điện thoại hoặc máy tính của mình, đăng ký một tài khoản, và bắt đầu chơi ngay. GoQuiz sẽ mang đến cho bạn những giây phút thư giãn và học hỏi bổ ích. Hãy cùng GoQuiz khám phá thế giới kiến thức và tận hưởng niềm vui của trò chơi trắc nghiệm!"
-                android:textSize="15dp"/>
+                android:text="@string/rules"
+                android:textSize="20sp"/>
         </LinearLayout>
     </ScrollView>
 
@@ -76,6 +52,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
