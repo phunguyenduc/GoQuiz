@@ -14,32 +14,33 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
         android:text="Chủ đề"
-        android:textSize="28dp"/>
+        android:textSize="28sp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:id="@+id/TextInputBox"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:id="@+id/from"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/TopicText"
         app:layout_constraintBaseline_toBaselineOf="@id/TopicText"
         android:layout_marginStart="125dp"
         android:layout_marginEnd="25dp"
         android:hint="From">
-        <com.google.android.material.textfield.TextInputEditText
+        <AutoCompleteTextView
+            android:id="@+id/select_category"
+            app:simpleItems="@array/categories"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/EditTextName"/>
+            android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ListView
         android:id="@+id/QuestionsListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputBox"/>
+        app:layout_constraintTop_toBottomOf="@+id/TextInputBox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

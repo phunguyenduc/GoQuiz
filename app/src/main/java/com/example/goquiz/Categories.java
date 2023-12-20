@@ -48,7 +48,7 @@ public class Categories extends AppCompatActivity {
             }
         });
         binding.QuestionsButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Categories.this, Questions.class);
+            Intent intent = new Intent(Categories.this, QuestionsList.class);
             startActivity(intent);
         });
     }
