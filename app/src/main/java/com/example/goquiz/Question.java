@@ -3,7 +3,7 @@ package com.example.goquiz;
 import java.io.Serializable;
 import java.util.List;
 
-public class QuestionClass implements Serializable {
+public class Question implements Serializable {
     private int stt;
     private String category;
     private String questionText;
@@ -11,7 +11,7 @@ public class QuestionClass implements Serializable {
     private int correctAnswerIndex;
     private int difficultyLevel;
 
-    public QuestionClass(int stt, String category, String questionText, List<String> answerOptions, int correctAnswerIndex, int difficultyLevel) {
+    public Question(int stt, String category, String questionText, List<String> answerOptions, int correctAnswerIndex, int difficultyLevel) {
         this.stt = stt;
         this.questionText = questionText;
         this.answerOptions = answerOptions;

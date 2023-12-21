@@ -8,8 +8,8 @@ import android.widget.TextView;
 import java.util.List;
 
 public class QuestionAdapter extends BaseAdapter {
-    private List<QuestionClass> listQuestion;
-    public QuestionAdapter(List<QuestionClass> listQuestion){
+    private List<Question> listQuestion;
+    public QuestionAdapter(List<Question> listQuestion){
         this.listQuestion = listQuestion;
     }
 
@@ -36,7 +36,7 @@ public class QuestionAdapter extends BaseAdapter {
         }else {
             viewItem = view;
         }
-        QuestionClass question = listQuestion.get(i);
+        Question question = listQuestion.get(i);
         // Câu hỏi
         ((TextView) viewItem.findViewById(R.id.cauhoi)).setText(question.getQuestionText());
         // Thứ tự

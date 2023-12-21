@@ -10,5 +10,6 @@
         <item name="geo">Địa lý</item>
         <item name="tech">Công nghệ</item>
         <item name="astra">Thiên văn học</item>
+        <item name="all">Tất cả</item>
     </string-array>
 </resources>

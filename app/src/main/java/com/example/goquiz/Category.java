@@ -1,16 +1,11 @@
 package com.example.goquiz;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-public class CategoriesClass {//implements Parcelable {
+public class Category {//implements Parcelable {
     private String name;
     private int image;
     private String description;
 
-    public CategoriesClass(String name, int image, String description) {
+    public Category(String name, int image, String description) {
         this.name = name;
         this.image = image;
         this.description = description;

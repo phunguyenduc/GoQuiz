@@ -10,12 +10,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class CategoriesAdapter extends BaseAdapter {
-    private Context context;
-    private ArrayList<CategoriesClass> categories;
+    private ArrayList<Category> categories;
 
-    public CategoriesAdapter(Context context, ArrayList<CategoriesClass> attractions) {
-        this.context = context;
-        this.categories = attractions;
+    public CategoriesAdapter(ArrayList<Category> categories) {
+        this.categories = categories;
     }
 
     @Override
@@ -42,12 +40,12 @@ public class CategoriesAdapter extends BaseAdapter {
         } else {
             viewItem = view;
         }
-        CategoriesClass category = categories.get(i);
-        // Ảnh lĩnh vực
+        Category category = categories.get(i);
+        // Ảnh chủ đề
         ((ImageView) viewItem.findViewById(R.id.CategoriesImage)).setImageResource(category.getImage());
-        // Tên lĩnh vực
+        // Tên chủ đề
         ((TextView) viewItem.findViewById(R.id.CategoriesName)).setText(category.getName());
-        // Mô tả về lĩnh vực
+        // Mô tả về chủ đề
         ((TextView) viewItem.findViewById(R.id.CategoriesDescription)).setText(String.valueOf(category.getDescription()));
         return viewItem;
     }
