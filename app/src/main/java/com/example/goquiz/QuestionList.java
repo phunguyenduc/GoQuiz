@@ -16,7 +16,7 @@ import java.util.List;
 
 public class QuestionList extends AppCompatActivity {
     private ActivityQuestionslistBinding binding;
-    public static List<Question> questionList;
+    public static ArrayList<Question> questionList;
 
     private List<Question> filteredList = new ArrayList<>();
     private boolean isFiltered = false;
@@ -35,6 +35,7 @@ public class QuestionList extends AppCompatActivity {
             intent.putExtra("cauhoi", selected.getQuestionText());
             intent.putExtra("dokho", selected.getDifficultyLevel());
             intent.putExtra("dapan", selected.getCorrectAnswerIndex());
+            // Chuyển từ list thành array
             String[] tuychon = selected.getAnswerOptions().toArray(new String[0]);
             intent.putExtra("tuychon", tuychon);
             startActivity(intent);
@@ -68,7 +69,7 @@ public class QuestionList extends AppCompatActivity {
         QuestionAdapter adapter2 = new QuestionAdapter(filteredList);
         binding.QuestionsListView.setAdapter(adapter2);
     }
-    public static List<Question> questionList() {
+    public static ArrayList<Question> questionList() {
         questionList = new ArrayList<>();
         questionList.add(new Question(1,"Toán học", "Tính giá trị của biểu thức sau: 11 + 56", Arrays.asList("64", "65", "66", "67"), 4, 0));
         questionList.add(new Question(2,"Toán học", "Hình tam giác có bao nhiêu cạnh?", Arrays.asList("3", "4", "5", "6"), 1, 0));

@@ -42,13 +42,14 @@ public class QuestionDetailed extends AppCompatActivity {
         binding.AnswerD.setText(tuychonn[3]);
 
         int dapan = intent.getIntExtra("dapan",0);
-        if(dapan - 1 == 0){
+        // Thay đổi background đáp án đúng
+        if(dapan == 1){
             binding.AnswerA.setBackgroundResource(R.drawable.right_op);
-        } else if (dapan - 1 == 1) {
+        } else if (dapan == 2) {
             binding.AnswerB.setBackgroundResource(R.drawable.right_op);
-        }else if (dapan - 1 == 2){
+        }else if (dapan == 3){
             binding.AnswerC.setBackgroundResource(R.drawable.right_op);
-        }else if (dapan - 1 == 3){
+        }else if (dapan == 4){
             binding.AnswerD.setBackgroundResource(R.drawable.right_op);
         }
         binding.CorrectAnswer.setText("Đáp án đúng: " + tuychonn[dapan-1]);

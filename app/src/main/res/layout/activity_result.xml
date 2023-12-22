@@ -34,24 +34,23 @@
         app:layout_constraintTop_toBottomOf="@+id/ScoreTitle"/>
 
     <Button
+        android:id="@+id/FinishButton"
         android:layout_width="123dp"
         android:layout_height="wrap_content"
-        android:id="@+id/FinishButton"
+        android:layout_marginTop="50dp"
         android:text="Hoàn thành"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ReplayButton"
-        app:layout_constraintTop_toBottomOf="@+id/Score"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score" />
 
     <Button
+        android:id="@+id/ReplayButton"
         android:layout_width="123dp"
         android:layout_height="wrap_content"
-        android:id="@+id/ReplayButton"
         android:text="Chơi lại"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@+id/FinishButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/FinishButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Score"/>
+        app:layout_constraintStart_toEndOf="@+id/FinishButton" />
 
     <Button
         android:layout_width="wrap_content"

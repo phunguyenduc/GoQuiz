@@ -1,9 +1,8 @@
 package com.example.goquiz;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class Question implements Serializable {
+public class Question {
     private int stt;
     private String category;
     private String questionText;

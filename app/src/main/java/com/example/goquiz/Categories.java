@@ -47,6 +47,9 @@ public class Categories extends AppCompatActivity {
             }
         });
 
+        int total = ScorePref.saveScore(this);
+        binding.score.setText(total + " pts");
+
         binding.level.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if(isChecked){
                 dokho = 1;

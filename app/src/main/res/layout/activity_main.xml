@@ -41,7 +41,7 @@
                 android:layout_gravity="center_horizontal"
                 android:justificationMode="inter_word"
                 android:text="@string/rules"
-                android:textSize="20sp" />
+                android:textSize="22sp" />
         </LinearLayout>
     </ScrollView>
 
