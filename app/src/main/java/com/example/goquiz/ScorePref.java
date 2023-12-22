@@ -10,11 +10,11 @@ public class ScorePref {
     }
 
     public static void updateScore(Context context, int score1play) {
-        int diemSoHienTai = saveScore(context);
-        diemSoHienTai += score1play;
+        int score1 = saveScore(context);
+        score1 += score1play;
 
         SharedPreferences.Editor editor = context.getSharedPreferences("Score", Context.MODE_PRIVATE).edit();
-        editor.putInt("score", diemSoHienTai);
+        editor.putInt("score", score1);
         editor.apply();
     }
 }
